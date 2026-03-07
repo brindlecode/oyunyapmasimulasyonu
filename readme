@@ -1,1 +1,35 @@
-readme
+# AI Game Studio Tycoon Türkiye
+
+Tarayıcıda çalışan, tamamen Türkçe arayüzlü iş / yönetim / girişim simülasyonu.
+
+## Özellikler
+- Aras Demir ile sıfırdan stüdyo kurma
+- AI panelinden yeni oyun üretme ve proje yönetimi
+- Geliştirme aşamaları + rastgele olaylar
+- Yayın sonrası canlı metrikler ve topluluk geri bildirimi
+- Çalışan işe alım, maaş ve motivasyon yönetimi
+- Ofis yükseltmeleri ve AI altyapı seviyesi
+- Yatırımcı teklifleri ve anlaşma kararları
+- Finans dashboard'u, trend / rakip / kriz raporları
+- Otomatik ve manuel kayıt / yükleme (localStorage)
+
+## Çalıştırma
+### Yöntem 1 (en kolay)
+1. `index.html` dosyasını modern bir tarayıcıda aç.
+
+### Yöntem 2 (yerel sunucu)
+1. Proje klasöründe terminal aç.
+2. Aşağıdaki komutu çalıştır:
+   ```bash
+   python3 -m http.server 8080
+   ```
+3. Tarayıcıdan `http://localhost:8080` adresine git.
+
+## Dosya yapısı
+- `index.html` → ekranlar ve ana iskelet
+- `styles.css` → modern tycoon arayüz stili
+- `game.js` → tüm simülasyon sistemleri, veri havuzları ve oyun döngüsü
+
+## Notlar
+- Oyun dili tamamen Türkçedir.
+- Kayıt verisi tarayıcı localStorage'ında `aiGameStudioTycoonTRSave_v1` anahtarı altında tutulur.
