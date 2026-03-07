@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Game Studio Tycoon Türkiye</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="startScreen" class="screen active">
+    <div class="hero">
+      <h1>AI Game Studio Tycoon Türkiye</h1>
+      <p>Aras Demir ile geleceğin oyun stüdyosunu kur.</p>
+      <div class="menu-grid">
+        <button id="newCareerBtn">Yeni Kariyer</button>
+        <button id="loadCareerBtn">Kaydı Yükle</button>
+        <button data-open-modal="settingsModal">Ayarlar</button>
+        <button data-open-modal="howToModal">Nasıl Oynanır</button>
+        <button data-open-modal="aboutModal">Hakkında</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="gameScreen" class="screen">
+    <header class="topbar">
+      <div>
+        <h2 id="companyNameLabel">Stüdyo</h2>
+        <small id="dateLabel">1. Gün</small>
+      </div>
+      <div class="time-controls">
+        <button data-speed="0">Duraklat</button>
+        <button data-speed="1" class="active-speed">1x</button>
+        <button data-speed="2">2x</button>
+        <button data-speed="4">4x</button>
+      </div>
+      <div class="resource-strip" id="resourceStrip"></div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+      <section class="content" id="contentArea"></section>
+    </main>
+
+    <footer class="footer-actions">
+      <button id="manualSaveBtn">Manuel Kaydet</button>
+      <button id="newGameResetBtn">Yeni Oyun Başlat</button>
+    </footer>
+  </div>
+
+  <div id="modalRoot"></div>
+
+  <template id="modalTemplate">
+    <div class="modal-overlay">
+      <div class="modal-card">
+        <h3 class="modal-title"></h3>
+        <div class="modal-content"></div>
+        <button class="close-modal">Kapat</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="game.js"></script>
+</body>
+</html>
