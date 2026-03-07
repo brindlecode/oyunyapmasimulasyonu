@@ -1,1 +1,26 @@
-readme
+# AI Game Studio Tycoon Türkiye (Tek HTML Sürüm)
+
+Bu sürüm **tek dosya** olarak hazırlandı: `index.html`.
+
+## Localde nasıl oynarım?
+1. Proje klasörüne gir.
+2. `index.html` dosyasını çift tıkla.
+3. Tarayıcıda açılınca **Yeni Kariyer** ile başla.
+
+> Alternatif: Terminalden `python3 -m http.server 8080` çalıştırıp `http://localhost:8080` adresine gir.
+
+## İçerik
+- Tam Türkçe arayüz
+- AI oyun üretim paneli
+- Proje aşamaları + rastgele olaylar
+- Yayın sonrası metrik simülasyonu
+- Çalışan, finans, yatırımcı, ofis/AI yükseltmeleri
+- Topluluk geri bildirimi ve müdahale kararları
+- Raporlar, trendler, rozetler, görevler
+- Otomatik + manuel kayıt (localStorage)
+
+## Kayıt
+- Anahtar: `aiGameStudioTycoonTR_html_v2`
+
+## Dosya
+- `index.html` → tüm görsellik + oyun sistemleri (CSS/JS gömülü)
